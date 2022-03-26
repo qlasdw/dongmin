@@ -1,47 +1,22 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-class account {
-public:
-	string name;
-	int a, b;
-	account(string name, int i, int i2);
-	int deposit(int money);
-	int withdraw(int money);
-	int in();
-	string getowner();
-};
-
-account::account(string name2, int i, int i2) {
-	name = name;
-	a = i;
-	b = i2;
-}
-
-int account::deposit(int money) {
-	b += money;
-	return b;
-}
-
-int account::withdraw(int money) {
-	b -= money;
-	return b;
-}
-
-int account::in() {
-	return b;
-}
-
-string account::getowner() {
-	return name;
-}
-
-
 int main() {
-	account a("kitae", 1, 5000);
-	a.deposit(50000);
-	cout << a.getowner() << "의 잔액은 " << a.in() << endl;
-	int money = a.withdraw(20000);
-	cout << a.getowner() << "의 잔액은 " << a.in() << endl;
-}
+	string s;
+	char c[100];
+	int max = 0;;
 
+	cout << "5 명의 이름을 ';'으로 구분하여 입력하세요\n>>";
+	for (int i = 0; i < 5; i++)
+	{
+		cin.getline(c, 100, ';');
+		cout << i + 1 << " : " << c << endl;
+
+		if (max < strlen(c)) {
+			s = c;
+		}
+	}
+	cout << "가장 긴 이름은" << c;
+
+}

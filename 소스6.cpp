@@ -1,29 +1,16 @@
 #include <iostream>
 using namespace std;
- 
-class tower {
-public:
-	int i;
-	tower();
-	tower(int a);
-	int getheight();
-};
-
-tower::tower() {
-	i = 1;
-}
-
-tower::tower(int a) {
-	i = a;
-}
-
-int tower::getheight() {
-	return i;
-}
-
 int main() {
-	tower mytower;
-	tower seoultower(100);
-	cout << "높이는 " << mytower.getheight() << "미터" << endl;
-	cout << "높이는 " << seoultower.getheight() << "미터" << endl;
-}
+	char c[100];
+	while (true)
+	{
+		cout << "종료하고싶으면 yes를 입력하세요>>";
+		cin >> c;
+		cout << endl;
+		if (strcmp("yes", c) == 0)
+		{
+			break;
+		}
+	}
+	cout << "종료합니다...";
+ }

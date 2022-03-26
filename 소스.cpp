@@ -1,19 +1,13 @@
 #include <iostream>
 using namespace std;
-class rectangle {
-public:
-	int width;
-	int height;
-	int getarea();
-};
-
-int rectangle::getarea() {
-	return width * height;
-}
 
 int main() {
-	rectangle rect;
-	rect.width = 3;
-	rect.height = 5;
-	cout << "사각형의 면적은 " << rect.getarea() << endl;
+	for (int i = 1; i <= 100; i++)
+	{
+		cout << i << "\t";
+		if (i % 10 == 0)
+		{
+			cout << "\n";
+		}
+	}
 }
